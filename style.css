@@ -1,0 +1,151 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #263238;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+#wrapper1, #wrapper2{
+	background: #37474f;
+	width: 70%;
+	max-width: 1000px;
+	text-align: center;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.24);
+	margin: 2% auto;
+}
+
+#wrapper1{
+	height: 80vh;
+	max-height: 600px;
+	margin: 10vh auto 10vh auto;
+}
+
+.container{
+	padding: 13% 10px;
+}
+
+.result{
+	padding: 10px;
+}
+
+#logo{
+	  width: 25%;
+}
+
+h1,h2{
+	color: #78909c ;
+	padding: 20px 0;
+}
+
+.result h1, .result h2{
+	padding: 5px 0;
+}
+
+h2{
+	font-size: 2.5em;
+}
+
+.start-btn{
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  font-size: 2em!important;
+  font-weight: 100!important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+
+.start-btn:hover{
+	font-size: 2.1em!important;
+  	font-weight: 100;
+	background-color: #607d8b;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.24);
+}
+
+.btn1, .btn2{
+	padding: 10px!important;
+	font-size: 1.8em;
+	min-width: 200px;
+	margin-top: 10%;
+	color: #fff!important;
+}
+.btn1{
+	float: left;
+	margin-left: 10%;
+	background: #81c784!important;
+}
+.btn2{
+	float: right;
+	margin-right: 10%;
+	background: #e57373!important;
+}
+
+#geekName{
+	color: #81c784;
+}
+
+#geekImage{
+	  border: 8px solid #546e7a;
+}
+
+#geekInfo{
+	color: #78909c;
+	width: 80%;
+	margin: auto;
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+.again{
+	margin-top: 20px;
+	font-size: 1.5em;
+	text-decoration: none;
+	background: #e57373;
+	color: #FFF;
+	padding: 20px;
+	display: block;
+}
+
+input, input:active, input:hover, input:focus{
+  background-color: #546e7a;
+  border: 0!important;
+  box-shadow: none;
+  color: #b0bec5;
+  cursor: pointer!important;
+  outline:0!important;
+  font-weight: bold;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+@media screen and (max-width:700px){
+	.btn1, .btn2{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin: 10px 0;
+	}
+	.container{
+		padding: 8% 10px;
+	}
+}
+
+@media screen and (max-width:550px){
+	body{
+		background: #37474f;
+	}
+	#wrapper1,#wrapper2{
+		width: 100%;
+		box-shadow: none;
+		margin: 0;
+	}
+	#geekImage{
+		width: 85%;
+	}
+}

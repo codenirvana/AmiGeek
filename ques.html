@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Am I Geek?</title>
+	<link rel="stylesheet" href="style.css">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
+</head>
+<body>
+	<div id="wrapper1">
+		<div class="container">
+			<div class="ques-wrap">
+				<h2 id="ques">This is question</h2>
+				<input class="btn1" type="submit" id="ans1" value="Option 1" onclick="optionClick('1')">
+				<input class="btn2" type="submit" id="ans2" value="Option 2" onclick="optionClick('0')">
+			</div>
+		</div>
+	</div>
+	<script src='main.js' type='text/javascript'></script>
+	<script type='text/javascript'>
+		window.onload = function(){
+		  generate();
+		};
+	</script>
+</body>
+</html>
