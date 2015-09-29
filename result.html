@@ -7,21 +7,23 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
 </head>
 <body>
-	<div id="result">
-		<div class="container">
-			<h1>Congratulations! You are</h1>
-			<div>
-				<h2 id="geekName"></h2>
-				<img id="geekImage" src="" alt="you are">
-				<div id="geekInfo"></div>
+	<div id="wrapAll">
+		<div id="result">
+			<div class="container">
+				<h1>Congratulations! You are</h1>
+				<div>
+					<h2 id="geekName"></h2>
+					<img id="geekImage" src="" alt="you are">
+					<div id="geekInfo"></div>
+				</div>
+				<a class="again" href="index.html">Cool, Let's Test Again!</a>
 			</div>
-			<a class="again" href="index.html">Cool, Let's Test Again!</a>
 		</div>
 	</div>
 	<script src='main.js' type='text/javascript'></script>
 	<script type='text/javascript'>
 		window.onload = function(){
-		  geek.showResult();
+		  showResult();
 		};
 	</script>
 </body>
