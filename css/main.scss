@@ -107,18 +107,18 @@ body{
 }
 
 .start-btn{
-  border-radius: 50%;
-  width: 125px;
-  height: 125px;
-  font-size: 2em!important;
-  font-weight: 100!important;
-  box-shadow: $shadow-low;
-  &:hover{
-  	font-size: 2.1em!important;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    font-size: 2em!important;
+    font-weight: 100!important;
+    box-shadow: $shadow-low;
+    &:hover{
+    	font-size: 2.1em!important;
     	font-weight: 100;
-  	background-color: #607d8b;
-  	box-shadow: $shadow-high;
-  }
+    	background-color: #607d8b;
+    	box-shadow: $shadow-high;
+    }
 }
 
 .btn1, .btn2{
@@ -146,7 +146,7 @@ body{
 }
 
 #geekImage{
-	  border: 8px solid $secondary-bg;
+    border: 8px solid $secondary-bg;
 }
 
 #geekInfo{
@@ -168,14 +168,14 @@ body{
 }
 
 input, input:active, input:hover, input:focus{
-  background-color: $secondary-bg;
-  border: 0!important;
-  box-shadow: none;
-  color: #b0bec5;
-  cursor: pointer!important;
-  outline:0!important;
-  font-weight: bold;
-  @include transition();
+    background-color: $secondary-bg;
+    border: 0!important;
+    box-shadow: none;
+    color: #b0bec5;
+    cursor: pointer!important;
+    outline:0!important;
+    font-weight: bold;
+    @include transition();
 }
 
 @media screen and (max-width:$on-laptop){
