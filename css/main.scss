@@ -1,0 +1,225 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+$base-font-family: "Comic Sans MS", cursive, sans-serif;
+$base-font-size:   1em;
+
+$text-color:       #fff;
+$primary-color:    #78909c;
+$background-color: #263238;
+$brand-color:      #2a7ae2;
+$primary-bg:       #37474f;
+$secondary-bg:     #546e7a;
+
+$green-color:      #81c784!important;
+$red-color:        #e57373!important;
+
+$shadow-high: 0px 0px 30px rgba(0, 0, 0, 0.24);
+$shadow-low: 0px 0px 10px rgba(0, 0, 0, 0.24);
+
+$content-width:    800px;
+
+$on-palm:          450px;
+$on-laptop:        700px;
+
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition() {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+h1,h2{
+	color: $primary-color ;
+	padding: 20px 0;
+}
+
+h2{
+	font-size: 2.5em;
+}
+
+body{
+	background: $background-color;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	color: $text-color;
+}
+
+#wrapAll{
+    @include flex();
+	width: 100%;
+	min-height: 100vh;
+}
+
+#wrapper{
+    @include flex();
+	background: $primary-bg;
+	height: 80vh;
+	max-height: 600px;
+	width: 90%;
+	max-width: 1000px;
+	text-align: center;
+	box-shadow: $shadow-high;
+}
+
+.container{
+	width: 80%;
+}
+
+#result{
+	width: 80%;
+	padding: 25px;
+	text-align: center;
+	background: $primary-bg;
+	box-shadow: $shadow-high;
+
+    .container{
+    	width: 100%;
+    }
+}
+
+#logo{
+	  width: 40%;
+}
+
+.result h1, .result h2{
+	padding: 5px 0;
+}
+
+.start-btn{
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  font-size: 2em!important;
+  font-weight: 100!important;
+  box-shadow: $shadow-low;
+  &:hover{
+  	font-size: 2.1em!important;
+    	font-weight: 100;
+  	background-color: #607d8b;
+  	box-shadow: $shadow-high;
+  }
+}
+
+.btn1, .btn2{
+	padding: 10px!important;
+	font-size: 1.8em;
+	min-width: 200px;
+	margin-top: 10%;
+	color: #fff!important;
+}
+
+.btn1{
+	float: left;
+	margin-left: 10%;
+	background: $green-color;
+}
+
+.btn2{
+	float: right;
+	margin-right: 10%;
+	background: $red-color;
+}
+
+#geekName{
+	color: $green-color;
+}
+
+#geekImage{
+	  border: 8px solid $secondary-bg;
+}
+
+#geekInfo{
+	color: $primary-color;
+	width: 80%;
+	margin: auto;
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+.again{
+	margin-top: 20px;
+	font-size: 1.5em;
+	text-decoration: none;
+	background: $red-color;
+	color: $text-color;
+	padding: 20px;
+	display: block;
+}
+
+input, input:active, input:hover, input:focus{
+  background-color: $secondary-bg;
+  border: 0!important;
+  box-shadow: none;
+  color: #b0bec5;
+  cursor: pointer!important;
+  outline:0!important;
+  font-weight: bold;
+  @include transition();
+}
+
+@media screen and (max-width:$on-laptop){
+	.btn1, .btn2{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width:550px){
+	body{
+		background: $primary-bg;
+	}
+	#wrapper, #result{
+		width: 100%;
+		box-shadow: none;
+		margin: 0;
+		padding: 0;
+	}
+	#result .container{
+		width: 80%;
+		margin: auto;
+		padding-bottom: 20px;
+	}
+	#geekImage{
+		width: 85%;
+	}
+}
+
+@media screen and (max-height:$on-palm){
+	body{
+		background: $primary-bg;
+	}
+	#wrapper, #result{
+		width: 100%;
+		box-shadow: none;
+		margin: 0;
+		padding: 0;
+	}
+	#result .container{
+		width: 80%;
+		margin: auto;
+		padding-bottom: 20px;
+	}
+}
