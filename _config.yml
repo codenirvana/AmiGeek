@@ -3,7 +3,7 @@ title: Am I Geek?
 email: admin@codenirvana.in
 description: > # this means to ignore newlines until "baseurl:"
   Simple JS based fun personality quiz to check which geek you are
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "AmiGeek/" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: uditdistro
 github_username:  codenirvana
