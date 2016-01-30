@@ -9,7 +9,7 @@ var data = {
 			question: "You believe in open source?",
 			options: [ "Yes" , "No" ]
 		}, {
-			question: "You love to programming?",
+			question: "Do you enjoy programming?",
 			options: [ "Yes" , "Yes :)" ]
 		}, {
 			question: "You have more interest in...",
